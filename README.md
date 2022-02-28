@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/28824477/155988334-ddb1251b-83fe-4519-9afa-53bb5383f732.png)
+
+
 # TrollBasket
 TrollBasket is an e-commerce mobile application that allows users to view and purchase available products for sale. 
 
