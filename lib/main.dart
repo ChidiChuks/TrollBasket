@@ -1,33 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:stylish/constants.dart';
-import 'package:stylish/screens/home/home_screen.dart';
+import 'package:TrollBasket/routes.dart';
+// import 'package:TrollBasket/screens/profile/profile_screen.dart';
+import 'package:TrollBasket/screens/splash/splash_screen.dart';
+import 'package:TrollBasket/theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TrollBasket',
-      theme: ThemeData(
-        scaffoldBackgroundColor: bgColor,
-        primarySwatch: Colors.blue,
-        fontFamily: "Gordita",
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-        textTheme: const TextTheme(
-          bodyText2: TextStyle(color: Colors.black54),
-        ),
-      ),
-      home: const HomeScreen(),
+      theme: theme(),
+      // home: SplashScreen(),
+      // We use routeName so that we dont need to remember the name
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
